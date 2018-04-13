@@ -11,3 +11,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |	https://codeigniter.com/user_guide/general/hooks.html
 |
 */
+
+/***************************************************************************
+ * Pre system hooks
+ ***************************************************************************
+ */
+$hook['pre_system'][] = array(
+    'class' => '',
+    'function' => 'register_loaders',
+    'filename' => 'register_loaders.php',
+    'filepath' => 'hooks/loaders'
+);
